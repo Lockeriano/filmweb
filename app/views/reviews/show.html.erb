@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @review.image.url(:medium, class: "review_image") %>
+
 <p>
   <strong>Title:</strong>
   <%= @review.title %>
@@ -9,6 +11,7 @@
   <strong>Description:</strong>
   <%= @review.description %>
 </p>
+
 
 <%= link_to 'Edit', edit_review_path(@review) %> |
 <%= link_to 'Back', reviews_path %>
