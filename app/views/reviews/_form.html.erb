@@ -11,19 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+<form>
+  <div class="form-group">
+    <label for="exampleInputTitle">Title</label>
+    <input type="title" class="form-control" id="exampleInputTitle" placeholder="Title">
   </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
+  <div class="form-group">
+    <label for="exampleInputDescription">Description</label>
+    <input type="description" class="form-control" id="exampleInputDescription" placeholder="Description">
   </div>
-
-  <%= f.file_field :image %>
-
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
   </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
 <% end %>
